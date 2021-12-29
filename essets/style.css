@@ -1,0 +1,94 @@
+/* 
+Reset CSS
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+main {
+    margin-top: 46px;
+}
+
+.navigation {
+    height: 46px;
+    width: 100%;
+    background-color: black;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.navigation > ul > li {
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navigation > ul > li > a {
+    color: white;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation li:hover {
+    background-color: gray;
+}
+
+.subnav {
+    position: absolute;
+    left: 0;
+}
+
+.subnav li {
+    list-style-type: none;
+}
+
+.subnav li a {
+    display: none;
+}
+
+.navigation li:hover .subnav a {
+    background-origin: padding-box;
+    padding: 16px;
+    line-height: 8px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.navigation .searching {
+    line-height: 46px;
+    padding: 0 21px;
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation .searching:hover {
+    background-color: red;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-text {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
