@@ -10,14 +10,11 @@ Reset CSS
 }
 
 header {
+    z-index: 10;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-}
-
-main {
-    margin-top: 46px;
 }
 
 .navigation {
@@ -84,11 +81,172 @@ main {
 }
 
 .slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url(/essets/icon/anh1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
 .slider-text {
-    width: 50px;
-    height: 50px;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.slider-text h2 {
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.slider-text * {
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.about {
+    background-color: rgb(24, 24, 24);
+}
+
+.about .about-main {
+    overflow: auto;
+    max-width: 800px;
+    margin : 0 auto;
+    padding: 64px 16px;
+}
+
+.about .about-main h1,
+.about .about-main #description {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.about .about-main p {
+    color: white;
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.team-section {
+    display: flex;
+}
+
+.img-handle {
+    width: 60%;
+    display:block;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.margin-style {
+    padding: 64px 16px;
+}
+
+.margin-style h1 {
+    font-weight: 500;
+}
+
+.margin-style h1,
+.margin-style i {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.margin-style i {
+    margin: 15px 0;
+}
+
+.tour {
     background-color: black;
+}
+
+.tour-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tour-ticket {
+    color: white;
+    list-style: none;
+    background-color: rgb(24, 24, 24);
+}
+
+.tour-ticket li {
+    padding: 8px 16px;
+    border: 1px solid rgb(50, 50, 50);
+    color: rgb(172, 172, 172);
+    font-size: 15px;
+}
+
+.tour-ticket li .sold-out {
+    background-color: rgb(169, 20, 9);
+    color: rgb(232, 230, 227);
+    padding: 2px 8px;
+    margin-left: 16px;
+}
+
+.tour-ticket li .amount {
+    float: right;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.buy-ticket {
+    margin: 32px -8px 0;
+    display: flex;
+
+
+}
+
+.buy-ticket-content {
+    background-color: rgb(24, 26, 27);
+    margin: 8px;
+}
+
+.buy-ticket-content img {
+    display: block;
+}
+
+.padding-16 {
+    padding: 0 16px;
+}
+
+.color-white {
+    color: rgb(232, 230, 227);
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.margin-15 * {
+    margin: 15px 0;
+}
+
+.font-15 * {
+    font-size: 15px;
+}
+
+.button-style {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 15px;
 }
