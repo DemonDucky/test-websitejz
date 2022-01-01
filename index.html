@@ -86,7 +86,7 @@
                             <p><b>New York</b></p>
                             <p class="opacity">Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-style">Buy Ticket</button>
+                            <button class="js-button-buy-ticket button-style">Buy Tickets</button>
                         </div>
                     </div>
                     
@@ -96,7 +96,7 @@
                             <p><b>Paris</b></p>
                             <p class="opacity">Sat 28 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-style">Buy Ticket</button>
+                            <button class="js-button-buy-ticket button-style">Buy Tickets</button>
                         </div>
                     </div>
 
@@ -106,12 +106,61 @@
                             <p><b>San Francisco</b></p>
                             <p class="opacity">Sun 29 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="button-style">Buy Tickets</button>
+                            <button class="js-button-buy-ticket button-style">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Display Label Buy Tickets -->
+        <div class="label-buy-ticket">
+            <div class="label-buy-ticket-contain">
+                <div class="label-buy-ticket-header">
+                    <h1 class="middle weight-500"><i class="ti-bag"></i>Tickets</h1>
+                    <i style="cursor: pointer;" class="ti-close js-close-label-ticket"></i>
+                </div>
+
+                <div class="label-buy-ticket-main">
+                    <p><i class="ti-shopping-cart"> </i>Tickets, $15 per person</p>
+                    <input type="text" placeholder="How Many?">
+                    <p><i class="ti-user"> </i>Send to</p>
+                    <input type="text" placeholder="Enter Email">
+                    <button class="button-pay">Pay <i class="ti-check"></i></button>
+                    <p style="float: right;">Need <a style="color: rgb(51, 162, 244)" href="#">Help?</a></p>
+                    <button class="js-close-label-ticket close-label-ticket">Close</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            const buybtns = document.querySelectorAll('.js-button-buy-ticket')
+            const showlabel = document.querySelector('.label-buy-ticket')
+            const hidelabel = document.querySelectorAll('.js-close-label-ticket')
+            const container_label = document.querySelector('.label-buy-ticket-contain')
+
+            function outside_hidebuyticket() {
+                showlabel.classList.remove('js-show-label')
+            }
+            showlabel.addEventListener('click', outside_hidebuyticket)
+
+            function hidebuyticket() {
+                showlabel.classList.remove('js-show-label')
+            }
+
+            function showbuyticket() {
+                showlabel.classList.add('js-show-label')
+            }
+
+            for (btn of buybtns) {
+                btn.addEventListener('click', showbuyticket)    
+            }
+            for (btn of hidelabel) {
+                btn.addEventListener('click', hidebuyticket)
+            }
+
+            container_label.addEventListener('click', function (event){
+                event.stopPropagation()
+            })            
+        </script>
     </main>
 
     <footer>

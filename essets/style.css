@@ -9,6 +9,10 @@ Reset CSS
     font-family: Arial, Helvetica, sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 header {
     z-index: 10;
     position: fixed;
@@ -243,10 +247,95 @@ header {
     font-size: 15px;
 }
 
+.middle {
+    text-align: center;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
 .button-style {
     padding: 8px 16px;
     background-color: black;
     color: white;
     border: 0;
     font-size: 15px;
+}
+
+.label-buy-ticket {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.label-buy-ticket-contain {
+    background-color: white;
+    width: 1000px;
+    margin: 16px;
+}
+
+.label-buy-ticket-header {
+    background-color: rgb(0, 120, 109);
+    padding: 42px 16px;
+    position: relative;
+    letter-spacing: 4px;
+}
+
+.label-buy-ticket-header .ti-bag {
+    padding-right: 16px;
+}
+
+.label-buy-ticket-main {
+    background-color: rgb(37, 37, 37);
+    padding: 0 16px;
+    overflow: auto;
+}
+
+.label-buy-ticket-main p {
+    margin: 10px 0;
+}
+
+.label-buy-ticket-main input {
+    width: 100%;
+    color: white;
+    padding: 8px;
+    border: 1px solid rgb(62, 68, 70);
+    background-color: inherit;
+}
+
+.label-buy-ticket-main .button-pay {
+    margin: 16px 0;
+    padding: 16px 0;
+    width: 100%;
+    background-color: rgb(0, 120, 109);
+    border: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.label-buy-ticket-header .ti-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.label-buy-ticket-main .close-label-ticket {
+    color: white;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background-color: red;
+    border: none;
+}
+
+.js-show-label {
+    display: flex;
 }
