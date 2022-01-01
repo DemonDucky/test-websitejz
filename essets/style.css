@@ -412,6 +412,14 @@ footer {
     color: white;
 }
 
+.send-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+
 @keyframes label {
     from {
         transform: translateY(-200px);
